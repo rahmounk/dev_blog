@@ -7,21 +7,16 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
-
-
-
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar />
+            <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/blog" component={Blog} />
+                <Route path="/contact" component={Contact} />
+            </Switch>
+        </div>
+    );
 }
-
 export default App;
