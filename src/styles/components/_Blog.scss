@@ -1,0 +1,74 @@
+.blog {
+  color: black;
+
+  h2 {
+    text-align: center;
+    color: #e0d676;
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+
+  h2,
+  label,
+  .post_content,
+  .post_tags {
+    margin-top: 10px;
+  }
+
+  .post_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+      width: 600px;
+      height: 150px;
+      resize: none;
+    }
+    input,
+    textarea {
+      outline: none;
+      border-radius: 8px;
+      padding: 5px;
+      border: none;
+
+      background-color: #42484e;
+      color: white;
+    }
+
+    #post_content {
+      background-color: #42474d;
+      color: white;
+    }
+
+    #post_content::placeholder {
+      color: rgb(160, 160, 160);
+    }
+
+    .button {
+      box-shadow: 3px 4px 0px 0px #decd76;
+      background-color: #e0d576;
+      border-radius: 18px;
+      border: 1px solid #c4bb6e;
+      display: inline-block;
+
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 17px;
+      padding: 7px 25px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #e0d576;
+
+      margin-top: 10px;
+    }
+    .button:hover {
+      background-color: #dbca5e;
+    }
+
+    .button:active {
+      position: relative;
+      top: 1px;
+    }
+  }
+}

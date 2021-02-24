@@ -1,0 +1,78 @@
+@mixin flex($dir, $just, $align) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+  flex-wrap: wrap;
+}
+// couleur de span
+@mixin span($color) {
+  color: $color;
+}
+
+// Box Sizing
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+// logo section 1
+@mixin logo_service {
+  background-color: #f6c45c;
+  border: 3px solid white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+// Mixin pour mes boutons
+@mixin buttons($color, $radius, $padding) {
+  background-color: $color;
+  border-radius: $radius;
+  padding: $padding;
+}
+
+// Mixin pour ligne après un titre un p...
+@mixin after($width:300px, $height:1px, $margint:20px, $marginb:20px) {
+  content: "";
+  background-color: white;
+  width: $width;
+  height: $height;
+
+  display: flex;
+
+  margin-top: $margint;
+  margin-bottom: $marginb;
+}
+
+// Mixin fonts
+@mixin font-face($font-family, $file-path, $weight, $style) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url("#{file-path}.ttf") format("truetype")
+  }
+}
+
+// taille
+@mixin taille($width, $height, $margin, $padding) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+}
+
+// Mixin Formulaire effet avec les span
+@mixin textarea {
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
