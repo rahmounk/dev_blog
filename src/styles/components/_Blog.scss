@@ -21,8 +21,7 @@
     align-items: center;
 
     textarea {
-      width: 600px;
-      height: 150px;
+      width: 60vw;
       resize: none;
     }
     input,
@@ -71,4 +70,25 @@
       top: 1px;
     }
   }
+}
+
+//*** SECTION POST
+.section_post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container_post {
+    border: 1px solid #dbca5e;
+    margin-top: 20px;
+    padding: 15px;
+    width: 40vw;
+    text-align: center;
+
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
 }
