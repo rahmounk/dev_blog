@@ -8,16 +8,20 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
+import Single from "./pages/Single";
+
 function App() {
     return (
         <div className="App">
             <Navbar />
             <Switch>
-                <Route path="/" component={Home} exact />
+                <Route path="/blog/:title" component={Single} />
                 <Route path="/blog" component={Blog} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/" exact component={Home} />
             </Switch>
         </div>
     );
 }
+
 export default App;

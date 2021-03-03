@@ -1,0 +1,80 @@
+.container {
+    background-image: url();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+
+    h1 {
+        margin-bottom: 15px;
+        color: #4f555c;
+        font-size: 2rem;
+    }
+
+    #formulaire {
+        background: rgb(223, 242, 243);
+        background: linear-gradient(
+            141deg,
+            rgba(223, 242, 243, 1) 0%,
+            rgba(244, 241, 250, 1) 35%,
+            rgba(245, 245, 245, 1) 100%
+        );
+        width: 40vw;
+        height: auto;
+        border-radius: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .name-form,
+        .phone-form,
+        .email-form {
+            margin: 15px;
+            padding: 8px;
+            width: 25vw;
+            border: none;
+            border-radius: 20px 20px 0px 20px;
+            outline: none;
+        }
+
+        textarea {
+            margin: 15px;
+            padding: 8px;
+            width: 30vw;
+            resize: none;
+
+            border: none;
+            border-radius: 20px 20px 0px 20px;
+            outline: none;
+        }
+
+        .button-form {
+            cursor: pointer;
+            width: 10vw;
+            padding: 10px;
+            margin: 10px;
+            background-color: #e0d676;
+            color: white;
+
+            outline: none;
+            border: none;
+            border-radius: 20px 20px 0px 20px;
+        }
+
+        .button-form:hover {
+            background-color: palegoldenrod;
+        }
+    }
+}
+
+// Message envoyé ok
+.message-envoye {
+    border: 1px solid black;
+    background-color: rgb(60, 184, 60);
+    a {
+        color: rgb(70, 114, 170);
+        text-decoration: none;
+    }
+}

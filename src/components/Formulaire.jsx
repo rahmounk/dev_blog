@@ -72,6 +72,7 @@ const Formulaire = () => {
                     }}
                 />
                 <input className="button" type="submit" value="CRÉER MON POST" />
+                <button className="button" onClick={() => window.location.reload(false)}>Affichez vos posts</button>
             </form>
         </div>
     );

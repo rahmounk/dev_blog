@@ -20,6 +20,8 @@ const Blog = () => {
         fetchApi();
     }, []);
 
+
+
     return (
         <div className="blog">
             <h2>Blog</h2>

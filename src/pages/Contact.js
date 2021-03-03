@@ -1,11 +1,17 @@
-import React from 'react'
+
+import "../styles/components/_Contact.scss";
+import FormContact from "../components/FormContact";
 
 const Contact = () => {
+    
+    
     return (
         <div>
-            Contact
+            <FormContact />
         </div>
-    )
-}
+    );
+};
 
-export default Contact
+
+
+export default Contact;
